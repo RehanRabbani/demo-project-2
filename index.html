@@ -30,11 +30,29 @@
       body {
         height: 1000px;
       }
-      .section-one{
-          display: flex;
+      .section-one {
+        display: flex;
+        flex-direction: column;
       }
-      .sub-one{
-          display: flex;
+      .section-one > p {
+        align-self: center;
+      }
+      .sub-one {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .section-two{
+        background-color: aqua;
+        height: 200px;
+    display: flex;
+    flex-direction: column;
+      }
+      .section-two>p{
+          align-self: center;
+      }
+      .sub-two{
+        display: flex;
+    justify-content: space-evenly;
       }
     </style>
   </head>
@@ -44,27 +62,39 @@
       <a class="navbar-brand" href="#">Home Page</a>
     </nav>
     <section class="section-one">
-        <p>Today's Date</p>
-        <div class="sub-one">
-            <div>
-                <h4>Prayer</h4>
-                <p>Fajr</p>
-                <p>Fajr</p>
-                <p>Fajr</p>
-                <p>Fajr</p>
-                <p>Fajr</p>
-                <p>Fajr</p>
-            </div>
-            <div>
-                <h4>Time</h4>
-                <p>10</p>
-                <p>20</p>
-                <p>20</p>
-                <p>20</p>
-                <p>20</p>
-                <p>20</p>
-            </div>
+      <p>Today's Date</p>
+      <div class="sub-one">
+        <div>
+          <h4>Prayer</h4>
+          <p>Fajr</p>
+          <p>Fajr</p>
+          <p>Fajr</p>
+          <p>Fajr</p>
+          <p>Fajr</p>
+          <p>Fajr</p>
         </div>
+        <div>
+          <h4>Time</h4>
+          <p>10</p>
+          <p>20</p>
+          <p>20</p>
+          <p>20</p>
+          <p>20</p>
+          <p>20</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-two">
+        <p>Volume</p>
+       <div class="sub-two">
+        <div class="btn-group " role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">Left</button>
+            
+            <button type="button" class="btn btn-secondary">Right</button>
+          </div>
+          <button class="btn btn-primary" type="submit">Button</button>
+       </div>
+          
     </section>
   </body>
 </html>
