@@ -26,13 +26,34 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <style>
+      
+      nav{
+       
+        
+      }
+      .bg-light {
+        background-color:white!important;
+        color:  #0b8e62  !important;
+      }
+      .navbar-brand{
+        color:  #0b8e62  !important;
+      }
       body {
-        height: 1000px;
+        height: 1300px;
+        
+       
       }
       .section-one {
         display: flex;
         flex-direction: column;
+        background-color:#f7f7f7;
       }
       .section-one > p {
         align-self: center;
@@ -42,10 +63,11 @@
         justify-content: space-evenly;
       }
       .section-two {
-        background-color: aqua;
-        height: 120px;
+        background-color:#f7f7f7;
+        height: 150px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 8rem;
       }
       .section-two > p {
         align-self: center;
@@ -54,22 +76,41 @@
         display: flex;
         justify-content: space-evenly;
       }
-      .section-three{
-          background-color: blueviolet;
-          display: flex;
-          flex-direction: column;
-         align-items: center;
-          
+      .section-three {
+       margin-top: 8rem;
+        background-color: #e8e8e8;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 180px;
       }
-      .section-three>button{
-          width: 60%;
+      .section-three > button {
+        width: 60%;
+      }
+      .section-three > button:nth-child(1){
+        background-color: #0b8e62 !important;
+      }
+      .section-four{
+        height: 178px;
+        background-image: url('2.jpg');
+      }
+      .section-five{
+        height: 8rem;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+      .one{
+        background-color: #0b8e62 !important;
+        border-color: #0b8e62 !important;
       }
     </style>
   </head>
 
   <body>
     <nav class="navbar sticky-top navbar-light bg-light">
-      <a class="navbar-brand" href="#">Home Page</a>
+      <a class="navbar-brand" href="#"><i class="fas fa-mosque"></i>Home Page</a>
     </nav>
     <section class="section-one">
       <p>Today's Date</p>
@@ -94,25 +135,31 @@
         </div>
       </div>
     </section>
+    <section class="section-five">
+        
+      </section>
     <section class="section-two">
       <p>Volume</p>
       <div class="sub-two">
         <div class="btn-group " role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary btn-lg">Left</button>
+          <button type="button" class="btn btn-secondary btn-lg"><i class="fas fa-plus-circle"></i></button>
 
-          <button type="button" class="btn btn-secondary btn-lg">Right</button>
+          <button type="button" class="btn btn-secondary btn-lg"><i class="fas fa-minus-circle"></i></button>
         </div>
-        <button class="btn btn-primary btn-lg" type="submit">Button</button>
+        <button class=" one btn btn-primary btn-lg" type="submit">test volume</button>
       </div>
       <p>current volume</p>
     </section>
+    <section class="section-four">
+        
+    </section>
     <section class="section-three">
       <p>system setting</p>
-      <button type="button" class="btn btn-primary btn-lg btn-block">
-        Block level button
+      <button type="button" class=" one btn btn-primary btn-lg btn-block">
+        Reboot
       </button>
       <button type="button" class="btn btn-secondary btn-lg btn-block">
-        Block level button
+        Refresh Time
       </button>
     </section>
   </body>
