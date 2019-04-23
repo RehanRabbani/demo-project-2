@@ -138,6 +138,12 @@
     margin-bottom: 15px;
     margin-top: 26px;
       }
+      .changeColor>p{
+        background-color: black;
+    color: aquamarine;
+    padding-left: 8px;
+    border-radius: 7px;
+      }
       @media only screen and (max-width: 600px) {
   .section-one{
     margin-top:0px !important;
@@ -164,7 +170,7 @@
           <p>Isha'a </p>
           <p>Jumma</p>
         </div>
-        <div>
+        <div class="changeColor">
           <h4><span class="icon-size"><i class="fas fa-clock"></i></span>Time</h4>
           <p id="fajr" contenteditable="false">1 </p>
            
@@ -175,7 +181,7 @@
           <p id="asr" contenteditable="false">3 </p>
           <p id="maghrib" contenteditable="false">4</p>
           <p id="isha" contenteditable="false">5</p>
-          <p id="jumma" contenteditable="false">6</p>
+          <p id="jumma" contenteditable="false"></p>
         </div>
         <div class="tick icon-size">
             <div onclick="one(this)">
