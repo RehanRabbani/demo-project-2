@@ -32,38 +32,42 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Luckiest+Guy"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
     <style>
-      
-      nav{
-       
-        
+      nav {
       }
       .bg-light {
-        background-color:#182627 !important;
+        background-color: #182627 !important;
         opacity: 0.9;
-        
       }
-      .navbar-brand{
+      .navbar-brand {
         color: #65ccb7 !important;
         display: flex;
-      
+
         align-items: center;
       }
       body {
         height: 1300px;
         background-color: #f2f2f2;
-        font-family: 'Roboto Slab', serif;
+        font-family: "Roboto Slab", serif;
         background-attachment: fixed;
-        
-       
       }
       .section-one {
-        margin-top: 8rem;
+        
         display: flex;
         flex-direction: column;
-        background-color:#65ccb7;
+        background-color: #65ccb7;
       }
       .section-one > p {
         align-self: center;
@@ -74,7 +78,7 @@
       }
       .section-two {
         margin-top: 8rem;
-        background-color:#65ccb7;
+        background-color: #65ccb7;
         height: 200px;
         display: flex;
         flex-direction: column;
@@ -88,7 +92,7 @@
         justify-content: space-evenly;
       }
       .section-three {
-       margin-top: 8rem;
+        margin-top: 8rem;
         background-color: #65ccb7;
         background-position: center;
         display: flex;
@@ -99,281 +103,337 @@
       .section-three > button {
         width: 60%;
       }
-   
-      .section-four{
+
+      .section-four {
         height: 200px;
-        background-image: url('2.jpg');
+        background-image: url("2.jpg");
         background-position: center;
-        background-repeat:repeat-x; 
+        background-repeat: repeat-x;
       }
-      
-      p{
+
+      p {
         font-size: 1.5rem;
       }
-      .one{
+      .one {
         background-color: #f2f2f2 !important;
         border-color: #182627 !important;
       }
-      .btn-secondary, .btn-primary{
+      .btn-secondary,
+      .btn-primary {
         background-color: #182627 !important;
       }
-      .section-five{
+      .section-five {
         margin-top: 8rem;
         height: 200px;
-        background-image: url('5.png');
+        background-image: url("5.png");
         background-position: center;
-        background-repeat:repeat-x; 
+        background-repeat: repeat-x;
       }
-      .icon-size{
+      .section-six{
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+      }
+      .icon-size {
         font-size: 1.7rem;
         padding-right: 0.5rem;
       }
-      h3{
+      h3 {
         align-self: center;
       }
-      .tick{
+      .tick {
         display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    margin-top: 26px;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        margin-top: 26px;
       }
-      .changeColor>p{
-        background-color: black;
-    color: aquamarine;
-    padding-left: 8px;
-    border-radius: 7px;
+      .changeColor > p {
+        background-color: #182627;
+        color: #65ccb7;
+        padding-left: 8px;
+        border-radius: 7px;
       }
-      audio{
+      audio {
         display: flex;
-    align-self: center;
-    margin-top: 4px;
+        align-self: center;
+        margin-top: 4px;
       }
       @media only screen and (max-width: 600px) {
-  .section-one{
-    margin-top:0px !important;
-  }
-}
-    
+        .section-one {
+          margin-top: 0px !important;
+        }
+      }
     </style>
   </head>
 
   <body onload="fetchTime()">
     <nav class="navbar sticky-top navbar-light bg-light">
-      <a class="navbar-brand" href="#"><span class="icon-size"><i class="fas fa-mosque"></i></span>Home Page</a>
+      <a class="navbar-brand animated infinite pulse delay-4s" href="#"
+        ><span class="icon-size"><i class="fas fa-mosque"></i></span>Home
+        Page</a
+      >
     </nav>
-    
-    <section class="section-one">
-      <h3 id="date">Today's Date</h3>
+    <section class="section-six animated  zoomIn delay-1.5s">
+      <h3 >See Jamat Time of Your masjid</h3>
+      <h3>Update Jamat time of masjid</h3>
+    </section>
+    <section class="section-one s">
+      <h3 id="date"class="animated  zoomIn delay-1.5s">Today's Date</h3>
       <div class="sub-one">
-        <div>
-          <h4><span class="icon-size"><i class="fas fa-pray"></i></span>Prayer</h4>
+        <div >
+          <h4>
+            <span class="icon-size"><i class="fas fa-pray"></i></span>Prayer
+          </h4>
           <p>Fajr</p>
           <p>Dhuhr</p>
-          <p>Asr </p>
-          <p>Maghrib </p>
-          <p>Isha'a </p>
+          <p>Asr</p>
+          <p>Maghrib</p>
+          <p>Isha'a</p>
           <p>Jumma</p>
         </div>
         <div class="changeColor">
-          <h4><span class="icon-size"><i class="fas fa-clock"></i></span>Time</h4>
-          <p id="fajr" contenteditable="false">1 </p>
-           
-     
+          <h4>
+            <span class="icon-size"><i class="fas fa-clock"></i></span>Time
+          </h4>
+          <p id="fajr" contenteditable="false">1</p>
+
           <p id="dhuhr" contenteditable="false">2</p>
-          
-       
-          <p id="asr" contenteditable="false">3 </p>
+
+          <p id="asr" contenteditable="false">3</p>
           <p id="maghrib" contenteditable="false">4</p>
           <p id="isha" contenteditable="false">5</p>
           <p id="jumma" contenteditable="false"></p>
         </div>
         <div class="tick icon-size">
-            <div onclick="one(this)">
-              
-            </div>
-            <div onclick="one(this)">
-              <i class="fas fa-check color"></i>
-            </div>
-            <div onclick="two(this)">
-                <i class="fas fa-check"></i>
-            </div>
-            <div onclick="three(this)">
-                <i class="fas fa-check"></i>
-            </div>
-            <div onclick="four(this)">
-                <i class="fas fa-check"></i>
-            </div>
-            <div onclick="five(this)">
-                <i class="fas fa-check"></i>
-            </div>
-            <div onclick="six(this)">
-                <i class="fas fa-check"></i>
-            </div>
+          <div onclick="one(this)"></div>
+          <div onclick="one(this)">
+            <i class="fas fa-check color"></i>
+          </div>
+          <div onclick="two(this)">
+            <i class="fas fa-check"></i>
+          </div>
+          <div onclick="three(this)">
+            <i class="fas fa-check"></i>
+          </div>
+          <div onclick="four(this)">
+            <i class="fas fa-check"></i>
+          </div>
+          <div onclick="five(this)">
+            <i class="fas fa-check"></i>
+          </div>
+          <div onclick="six(this)">
+            <i class="fas fa-check"></i>
+          </div>
         </div>
       </div>
     </section>
-   
+
     <section class="section-two">
-      
-<audio controls>
-    
-    <source src="azan1.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+      <audio controls>
+        <source src="azan1.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
       <h3>Volume</h3>
       <div class="sub-two">
         <div class="btn-group " role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary btn-lg"><i class="fas fa-plus-circle"></i></button>
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg"
+            onclick="plus()"
+          >
+            <i class="fas fa-plus-circle"></i>
+          </button>
 
-          <button type="button" class="btn btn-secondary btn-lg"><i class="fas fa-minus-circle"></i></button>
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg"
+            onclick="minus()"
+          >
+            <i class="fas fa-minus-circle"></i>
+          </button>
         </div>
-        <button class=" one btn btn-primary btn-lg" type="submit">test volume</button>
+        <button
+          class=" one btn btn-primary btn-lg"
+          type="submit"
+          onclick="test()"
+        >
+          test volume
+        </button>
       </div>
       <p>current volume</p>
     </section>
-    <section class="section-five">
-        
-      </section>
+    <section class="section-five"></section>
     <section class="section-three">
       <h3>system setting</h3>
-      <button type="button" class=" one btn btn-primary btn-lg btn-block" onclick="reboot()">
+      <button
+        type="button"
+        class=" one btn btn-primary btn-lg btn-block"
+        onclick="reboot()"
+      >
         Reboot
       </button>
-      <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="refresh()">
+      <button
+        type="button"
+        class="btn btn-secondary btn-lg btn-block"
+        onclick="refresh()"
+      >
         Refresh Time
       </button>
     </section>
   </body>
   <script>
-  let month,dates,year;
-  let day =new Date();
-  console.log(day.getMonth()+1);
+    let c = 0.1;
+    let month, dates, year;
+    let day = new Date();
+    console.log(day.getMonth() + 1);
 
-  console.log(day.getDate());
-  console.log(day.getFullYear())
-  month=day.getMonth()+1;
-  dates=day.getDate();
-  year=day.getFullYear();
-  document.querySelector('#date').innerHTML=`<span>${month}/${dates}/${year}</span>`;
-  function one(span) {
-    
-    let a =document.getElementById('fajr').textContent;
-    localStorage.setItem("fajr time", a);
-  var x = document.getElementById("fajr");
-  if (x.contentEditable == "false") {
-    x.contentEditable = "true";
-    span.innerHTML = `<i class="fas fa-pen-fancy"></i>`
-  
-  } else {
-    x.contentEditable = "false";
-    span.innerHTML = `<i class="fas fa-check"></i>`;
- 
-  }
-}
-function two(span) {
-  let a =document.getElementById('dhuhr').textContent;
-    localStorage.setItem("dhuhr time", a);
-    var x = document.getElementById("dhuhr");
-    if (x.contentEditable == "false") {
-      x.contentEditable = "true";
-      span.innerHTML = `<i class="fas fa-pen-fancy"></i>`
-    
-    } else {
-      x.contentEditable = "false";
-      span.innerHTML = `<i class="fas fa-check"></i>`;
-   
+    console.log(day.getDate());
+    console.log(day.getFullYear());
+    month = day.getMonth() + 1;
+    dates = day.getDate();
+    year = day.getFullYear();
+    document.querySelector(
+      "#date"
+    ).innerHTML = `<span>Today's date ${month}/${dates}/${year}</span>`;
+    function one(span) {
+      let a = document.getElementById("fajr").textContent;
+      localStorage.setItem("fajr time", a);
+      var x = document.getElementById("fajr");
+      if (x.contentEditable == "false") {
+        x.contentEditable = "true";
+        span.innerHTML = `<i class="fas fa-pen-fancy"></i>`;
+      } else {
+        x.contentEditable = "false";
+        span.innerHTML = `<i class="fas fa-check"></i>`;
+      }
     }
-  }
-  function three(span) {
-    let a =document.getElementById('asr').textContent;
-    localStorage.setItem("asr time", a);
-    var x = document.getElementById("asr");
-    if (x.contentEditable == "false") {
-      x.contentEditable = "true";
-      span.innerHTML = `<i class="fas fa-pen-fancy"></i>`
-    
-    } else {
-      x.contentEditable = "false";
-      span.innerHTML = `<i class="fas fa-check"></i>`;
-   
+    function two(span) {
+      let a = document.getElementById("dhuhr").textContent;
+      localStorage.setItem("dhuhr time", a);
+      var x = document.getElementById("dhuhr");
+      if (x.contentEditable == "false") {
+        x.contentEditable = "true";
+        span.innerHTML = `<i class="fas fa-pen-fancy"></i>`;
+      } else {
+        x.contentEditable = "false";
+        span.innerHTML = `<i class="fas fa-check"></i>`;
+      }
     }
-  }
-  function four(span) {
-    let a =document.getElementById('maghrib').textContent;
-    localStorage.setItem("maghrib time", a);
-    var x = document.getElementById("maghrib");
-    if (x.contentEditable == "false") {
-      x.contentEditable = "true";
-      span.innerHTML = `<i class="fas fa-pen-fancy"></i>`
-    
-    } else {
-      x.contentEditable = "false";
-      span.innerHTML = `<i class="fas fa-check"></i>`;
-   
+    function three(span) {
+      let a = document.getElementById("asr").textContent;
+      localStorage.setItem("asr time", a);
+      var x = document.getElementById("asr");
+      if (x.contentEditable == "false") {
+        x.contentEditable = "true";
+        span.innerHTML = `<i class="fas fa-pen-fancy"></i>`;
+      } else {
+        x.contentEditable = "false";
+        span.innerHTML = `<i class="fas fa-check"></i>`;
+      }
     }
-  }
-  function five(span) {
-    let a =document.getElementById('isha').textContent;
-    localStorage.setItem("isha time", a);
-    var x = document.getElementById("isha");
-    if (x.contentEditable == "false") {
-      x.contentEditable = "true";
-      span.innerHTML = `<i class="fas fa-pen-fancy"></i>`
-    
-    } else {
-      x.contentEditable = "false";
-      span.innerHTML = `<i class="fas fa-check"></i>`;
-   
+    function four(span) {
+      let a = document.getElementById("maghrib").textContent;
+      localStorage.setItem("maghrib time", a);
+      var x = document.getElementById("maghrib");
+      if (x.contentEditable == "false") {
+        x.contentEditable = "true";
+        span.innerHTML = `<i class="fas fa-pen-fancy"></i>`;
+      } else {
+        x.contentEditable = "false";
+        span.innerHTML = `<i class="fas fa-check"></i>`;
+      }
     }
-  }
-  function six(span) {
-    let a =document.getElementById('jumma').textContent;
-    localStorage.setItem("jumma time", a);
-    var x = document.getElementById("jumma");
-    if (x.contentEditable == "false") {
-      x.contentEditable = "true";
-      span.innerHTML = `<i class="fas fa-pen-fancy"></i>`
-    
-    } else {
-      x.contentEditable = "false";
-      span.innerHTML = `<i class="fas fa-check"></i>`;
-   
+    function five(span) {
+      let a = document.getElementById("isha").textContent;
+      localStorage.setItem("isha time", a);
+      var x = document.getElementById("isha");
+      if (x.contentEditable == "false") {
+        x.contentEditable = "true";
+        span.innerHTML = `<i class="fas fa-pen-fancy"></i>`;
+      } else {
+        x.contentEditable = "false";
+        span.innerHTML = `<i class="fas fa-check"></i>`;
+      }
     }
-  }
-  function fetchTime(){
-    
-    document.getElementById('fajr').textContent=localStorage.getItem("fajr time");
-    document.getElementById('dhuhr').textContent=localStorage.getItem("dhuhr time");
-    document.getElementById('asr').textContent=localStorage.getItem("asr time");
-    document.getElementById('maghrib').textContent=localStorage.getItem("maghrib time");
-    document.getElementById('isha').textContent=localStorage.getItem("isha time");
-    document.getElementById('jumma').textContent=localStorage.getItem("jumma time");
-  }
-  function reboot(){
-    let rebootTime="0:0";
-    document.getElementById('fajr').textContent=localStorage.setItem("fajr time",rebootTime);
-    document.getElementById('dhuhr').textContent=localStorage.setItem("dhuhr time",rebootTime);
-    document.getElementById('asr').textContent=localStorage.setItem("asr time",rebootTime);
-    document.getElementById('maghrib').textContent=localStorage.setItem("maghrib time",rebootTime);
-    document.getElementById('isha').textContent=localStorage.setItem("isha time",rebootTime);
-    document.getElementById('jumma').textContent=localStorage.setItem("jumma time",rebootTime);
-    document.getElementById('fajr').textContent=localStorage.getItem("fajr time");
-    document.getElementById('dhuhr').textContent=localStorage.getItem("dhuhr time");
-    document.getElementById('asr').textContent=localStorage.getItem("asr time");
-    document.getElementById('maghrib').textContent=localStorage.getItem("maghrib time");
-    document.getElementById('isha').textContent=localStorage.getItem("isha time");
-    document.getElementById('jumma').textContent=localStorage.getItem("jumma time");
-  }
-  function refresh(){
-    let array1 = ["fajr","dhuhr","asr","maghrib","isha","jumma"];
-    for(let j=0 ;j<array1.length;j++){
-      document.getElementById(`${array1[j]}`).textContent=localStorage.setItem(`${array1[j]} time`,"14:00");
-      document.getElementById(`${array1[j]}`).textContent=localStorage.getItem(`${array1[j]} time`);
+    function six(span) {
+      let a = document.getElementById("jumma").textContent;
+      localStorage.setItem("jumma time", a);
+      var x = document.getElementById("jumma");
+      if (x.contentEditable == "false") {
+        x.contentEditable = "true";
+        span.innerHTML = `<i class="fas fa-pen-fancy"></i>`;
+      } else {
+        x.contentEditable = "false";
+        span.innerHTML = `<i class="fas fa-check"></i>`;
+      }
     }
-   
-   
-    
-  }
+    function fetchTime() {
+      let array1 = ["fajr", "dhuhr", "asr", "maghrib", "isha", "jumma"];
+      for (let j = 0; j < array1.length; j++) {
+        document.getElementById(
+          `${array1[j]}`
+        ).textContent = localStorage.getItem(`${array1[j]} time`);
+        console.log(array1[j]);
+      }
+    }
+    function reboot() {
+      let rebootTime = "0:0";
+      let array1 = ["fajr", "dhuhr", "asr", "maghrib", "isha", "jumma"];
+      for (let j = 0; j < array1.length; j++) {
+        document.getElementById(
+          `${array1[j]}`
+        ).textContent = localStorage.setItem(`${array1[j]} time`, rebootTime);
+        document.getElementById(
+          `${array1[j]}`
+        ).textContent = localStorage.getItem(`${array1[j]} time`);
+        console.log(array1[j]);
+      }
+    }
+    function refresh() {
+      let array1 = ["fajr", "dhuhr", "asr", "maghrib", "isha", "jumma"];
+      for (let j = 0; j < array1.length; j++) {
+        document.getElementById(
+          `${array1[j]}`
+        ).textContent = localStorage.setItem(`${array1[j]} time`, "14:00");
+        document.getElementById(
+          `${array1[j]}`
+        ).textContent = localStorage.getItem(`${array1[j]} time`);
+        console.log(array1[j]);
+      }
+    }
+    let counter = 0;
+    function plus() {
+      const volume = document.querySelector("audio").volume; 
+
+      if (counter <= 0.999) {
+        counter = counter + c;
+      } else {
+        alert("max voice");
+      }
+
+      let d = (document.querySelector("audio").volume = counter);
+
+      console.log(`${counter}`);
+    }
+    function minus() {
+      const volume = document.querySelector("audio").volume; 
+      if (counter >= 0.1) {
+        counter = counter - c;
+      } else {
+        alert("min voice");
+      }
+
+      // Setting volume level
+      document.querySelector("audio").volume = counter;
+      // set volume to 50%
+      console.log(`${counter}`);
+    }
+    function test() {
+      console.log("test");
+    }
   </script>
 </html>
