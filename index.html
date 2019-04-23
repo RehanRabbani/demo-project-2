@@ -144,6 +144,11 @@
     padding-left: 8px;
     border-radius: 7px;
       }
+      audio{
+        display: flex;
+    align-self: center;
+    margin-top: 4px;
+      }
       @media only screen and (max-width: 600px) {
   .section-one{
     margin-top:0px !important;
@@ -210,6 +215,12 @@
     </section>
    
     <section class="section-two">
+      
+<audio controls>
+    
+    <source src="azan1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
       <h3>Volume</h3>
       <div class="sub-two">
         <div class="btn-group " role="group" aria-label="Basic example">
@@ -226,10 +237,10 @@
       </section>
     <section class="section-three">
       <h3>system setting</h3>
-      <button type="button" class=" one btn btn-primary btn-lg btn-block">
+      <button type="button" class=" one btn btn-primary btn-lg btn-block" onclick="reboot()">
         Reboot
       </button>
-      <button type="button" class="btn btn-secondary btn-lg btn-block">
+      <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="refresh()">
         Refresh Time
       </button>
     </section>
@@ -338,6 +349,31 @@ function two(span) {
     document.getElementById('maghrib').textContent=localStorage.getItem("maghrib time");
     document.getElementById('isha').textContent=localStorage.getItem("isha time");
     document.getElementById('jumma').textContent=localStorage.getItem("jumma time");
+  }
+  function reboot(){
+    let rebootTime="0:0";
+    document.getElementById('fajr').textContent=localStorage.setItem("fajr time",rebootTime);
+    document.getElementById('dhuhr').textContent=localStorage.setItem("dhuhr time",rebootTime);
+    document.getElementById('asr').textContent=localStorage.setItem("asr time",rebootTime);
+    document.getElementById('maghrib').textContent=localStorage.setItem("maghrib time",rebootTime);
+    document.getElementById('isha').textContent=localStorage.setItem("isha time",rebootTime);
+    document.getElementById('jumma').textContent=localStorage.setItem("jumma time",rebootTime);
+    document.getElementById('fajr').textContent=localStorage.getItem("fajr time");
+    document.getElementById('dhuhr').textContent=localStorage.getItem("dhuhr time");
+    document.getElementById('asr').textContent=localStorage.getItem("asr time");
+    document.getElementById('maghrib').textContent=localStorage.getItem("maghrib time");
+    document.getElementById('isha').textContent=localStorage.getItem("isha time");
+    document.getElementById('jumma').textContent=localStorage.getItem("jumma time");
+  }
+  function refresh(){
+    let array1 = ["fajr","dhuhr","asr","maghrib","isha","jumma"];
+    for(let j=0 ;j<array1.length;j++){
+      document.getElementById(`${array1[j]}`).textContent=localStorage.setItem(`${array1[j]} time`,"14:00");
+      document.getElementById(`${array1[j]}`).textContent=localStorage.getItem(`${array1[j]} time`);
+    }
+   
+   
+    
   }
   </script>
 </html>
